@@ -1,0 +1,430 @@
+{
+  "common": {
+    "siteName": "DUALAIHUB",
+    "siteDescription": "글로벌 AI 플랫폼 - 중국 AI & 글로벌 AI 자동 스케줄링",
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "success": "성공!",
+    "submit": "제출",
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "편집",
+    "back": "뒤로",
+    "next": "다음",
+    "close": "닫기",
+    "search": "검색",
+    "noResults": "결과를 찾을 수 없습니다",
+    "tryAgain": "다시 시도"
+  },
+  "nav": {
+    "home": "홈",
+    "about": "소개",
+    "pricing": "가격",
+    "contact": "문의",
+    "login": "로그인",
+    "register": "회원가입",
+    "dashboard": "대시보드",
+    "logout": "로그아웃",
+    "profile": "프로필",
+    "settings": "설정"
+  },
+  "home": {
+    "hero": {
+      "title": "이중 AI 파워, 하나의 플랫폼",
+      "subtitle": "중국 AI와 글로벌 AI 간의 자동 지능형 라우팅으로 최적의 결과",
+      "cta": "무료 시작",
+      "learnMore": "자세히 보기"
+    },
+    "features": {
+      "title": "강력한 AI 서비스",
+      "subtitle": "중국 및 글로벌 제공업체의 최고의 AI 모델에 접근",
+      "text": {
+        "title": "AI 텍스트",
+        "description": "지능형 모델 선택으로高品質 콘텐츠, 기사, 카피라이팅 생성"
+      },
+      "code": {
+        "title": "AI 코드",
+        "description": "고급 AI 지원으로 코드 작성, 디버그, 최적화"
+      },
+      "image": {
+        "title": "AI 이미지",
+        "description": "리얼하거나 예술적인 스타일로 멋진 이미지 생성"
+      },
+      "music": {
+        "title": "AI 음악",
+        "description": "오리지널 음악 트랙과 오디오 콘텐츠 생성"
+      },
+      "video": {
+        "title": "AI 비디오",
+        "description": "품질 안정화가 적용된 전문 비디오 제작"
+      },
+      "scheduling": {
+        "title": "스마트 스케줄링",
+        "description": "작업에 가장 적합한 AI 모델로 자동 라우팅"
+      }
+    },
+    "aiRouting": {
+      "title": "지능형 AI 라우팅",
+      "subtitle": "작업에 따라 최적의 AI 제공업체를 자동으로 선택",
+      "chineseAI": {
+        "title": "중국 AI",
+        "description": "Kimi, Doubao, Qwen, Zhipu - 리얼 콘텐츠, 초상화, 중국어 텍스트에 최적",
+        "features": ["리얼 비디오", "초상화 생성", "중국어 텍스트", "코드 생성"]
+      },
+      "globalAI": {
+        "title": "글로벌 AI",
+        "description": "GPT, Claude, Pika, Sora - 크리에이티브 및 예술적 콘텐츠에 최적",
+        "features": ["크리에이티브 라이팅", "예술적 이미지", "혁신적 아이디어", "스타일 변환"]
+      }
+    },
+    "cta": {
+      "title": "워크플로우를 혁신할 준비가 되셨나요?",
+      "subtitle": "이중 AI 파워를 활용하는 수천 명의 사용자에 합류하세요",
+      "button": "무료 체험"
+    }
+  },
+  "pricing": {
+    "title": "단순하고 투명한 가격 정책",
+    "subtitle": "필요에 맞는 플랜을 선택하세요",
+    "monthly": "월간",
+    "yearly": "연간",
+    "savePercent": "20% 절약",
+    "popular": "가장 인기",
+    "plans": {
+      "free": {
+        "name": "무료",
+        "price": "₩0",
+        "period": "/월",
+        "description": "플랫폼을 시험해 보기 완벽",
+        "features": [
+          "일일 100 크레딧",
+          "기본 AI 모델",
+          "커뮤니티 지원",
+          "표준 응답 시간"
+        ]
+      },
+      "starter": {
+        "name": "스타터",
+        "price": "₩13,000",
+        "period": "/월",
+        "description": "개인 및 소규모 프로젝트에 이상적",
+        "features": [
+          "일일 1,000 크레딧",
+          "모든 AI 모델",
+          "우선 지원",
+          "고급 기능",
+          "API 접근"
+        ]
+      },
+      "pro": {
+        "name": "프로",
+        "price": "₩39,000",
+        "period": "/월",
+        "description": "전문가 및 팀에 이상적",
+        "features": [
+          "일일 5,000 크레딧",
+          "모든 AI 모델",
+          "24/7 우선 지원",
+          "모든 고급 기능",
+          "전체 API 접근",
+          "사용자 정의 워크플로우"
+        ]
+      },
+      "enterprise": {
+        "name": "엔터프라이즈",
+        "price": "맞춤형",
+        "period": "",
+        "description": "맞춤형 요구사항이 있는 대규모 조직용",
+        "features": [
+          "무제한 크레딧",
+          "모든 AI 모델",
+          "전담 지원 관리자",
+          "사용자 정의 통합",
+          "SLA 보장",
+          "온프레미스 옵션"
+        ]
+      }
+    },
+    "getStarted": "시작하기",
+    "contactSales": "영업 문의",
+    "faq": {
+      "title": "자주 묻는 질문",
+      "q1": "크레딧이란 무엇인가요?",
+      "a1": "크레딧은 AI 서비스에 접근하는 데 사용됩니다. 복잡도에 따라 다양한 서비스가 다양한 양의 크레딧을 소비합니다.",
+      "q2": "플랜을 업그레이드하거나 다운그레이드할 수 있나요?",
+      "a2": "네, 언제든지 플랜을 변경할 수 있습니다. 변경 사항은 즉시 적용되며 요금은 일할 계산됩니다.",
+      "q3": "어떤 결제 방법을 지원하나요?",
+      "a3": "신용카드(Stripe), PayPal, 암호화폐(USDT TRC20)를 지원합니다.",
+      "q4": "무료 체험이 있나요?",
+      "a4": "네! 무료 플랜에서 매일 100 크레딧을 받아 플랫폼을 탐색할 수 있습니다."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "다시 오신 것을 환영합니다",
+      "subtitle": "계정에 로그인하세요",
+      "email": "이메일",
+      "password": "비밀번호",
+      "rememberMe": "로그인 상태 유지",
+      "forgotPassword": "비밀번호를 잊으셨나요?",
+      "submit": "로그인",
+      "noAccount": "계정이 없으신가요?",
+      "register": "회원가입",
+      "orContinueWith": "또는 다음으로 계속",
+      "google": "Google",
+      "github": "GitHub",
+      "discord": "Discord"
+    },
+    "register": {
+      "title": "계정 생성",
+      "subtitle": "DUALAIHUB 시작하기",
+      "name": "이름",
+      "email": "이메일",
+      "password": "비밀번호",
+      "confirmPassword": "비밀번호 확인",
+      "agree": "동의합니다",
+      "terms": "서비스 약관",
+      "and": "및",
+      "privacy": "개인정보 처리방침",
+      "submit": "계정 생성",
+      "haveAccount": "이미 계정이 있으신가요?",
+      "login": "로그인"
+    },
+    "forgotPassword": {
+      "title": "비밀번호 재설정",
+      "subtitle": "재설정 링크를 받으려면 이메일을 입력하세요",
+      "email": "이메일",
+      "submit": "재설정 링크 전송",
+      "backToLogin": "로그인으로 돌아가기",
+      "success": "재설정 링크를 이메일에서 확인하세요"
+    }
+  },
+  "dashboard": {
+    "welcome": "다시 오신 것을 환영합니다",
+    "overview": "개요",
+    "credits": {
+      "title": "크레딧",
+      "remaining": "남은",
+      "used": "사용됨",
+      "daily": "일일 할당량",
+      "resetIn": "초기화까지"
+    },
+    "recentActivity": "최근 활동",
+    "quickActions": "빠른 작업",
+    "services": {
+      "text": "AI 텍스트",
+      "code": "AI 코드",
+      "image": "AI 이미지",
+      "music": "AI 음악",
+      "video": "AI 비디오"
+    },
+    "history": {
+      "title": "기록",
+      "type": "유형",
+      "prompt": "프롬프트",
+      "model": "모델",
+      "credits": "크레딧",
+      "status": "상태",
+      "date": "날짜",
+      "actions": "작업",
+      "noResults": "기록을 찾을 수 없습니다",
+      "viewDetails": "상세 보기"
+    },
+    "quota": {
+      "title": "할당량 관리",
+      "dailyQuota": "일일 할당량",
+      "totalCredits": "총 크레딧",
+      "usedToday": "오늘 사용",
+      "remaining": "남은",
+      "resetTime": "일일 초기화 시간",
+      "upgradePlan": "플랜 업그레이드"
+    },
+    "settings": {
+      "title": "설정",
+      "profile": "프로필",
+      "account": "계정",
+      "preferences": "환경설정",
+      "security": "보안",
+      "notifications": "알림",
+      "apiKeys": "API 키"
+    }
+  },
+  "ai": {
+    "text": {
+      "title": "AI 텍스트 생성",
+      "subtitle": "高品质 텍스트 콘텐츠 생성",
+      "prompt": "프롬프트를 입력하세요",
+      "promptPlaceholder": "생성할 내용을 설명하세요...",
+      "style": "스타일",
+      "styleOptions": {
+        "realistic": "리얼",
+        "creative": "크리에이티브",
+        "professional": "프로페셔널",
+        "casual": "캐주얼"
+      },
+      "generate": "생성",
+      "generating": "생성 중...",
+      "result": "결과",
+      "copy": "복사",
+      "regenerate": "다시 생성"
+    },
+    "code": {
+      "title": "AI 코드 어시스턴트",
+      "subtitle": "코드 작성, 디버그, 최적화",
+      "prompt": "필요한 것을 설명하세요",
+      "promptPlaceholder": "생성할 코드 또는 도움이 필요한 문제를 설명하세요...",
+      "language": "프로그래밍 언어",
+      "generate": "코드 생성",
+      "generating": "생성 중...",
+      "result": "생성된 코드",
+      "copy": "코드 복사"
+    },
+    "image": {
+      "title": "AI 이미지 생성",
+      "subtitle": "텍스트에서 멋진 이미지 생성",
+      "prompt": "이미지를 설명하세요",
+      "promptPlaceholder": "산 위로美しい 일몰...",
+      "style": "스타일",
+      "styleOptions": {
+        "realistic": "리얼",
+        "artistic": "예술적",
+        "anime": "애니메",
+        "abstract": "추상"
+      },
+      "size": "크기",
+      "generate": "이미지 생성",
+      "generating": "생성 중...",
+      "download": "다운로드"
+    },
+    "music": {
+      "title": "AI 음악 생성",
+      "subtitle": "오리지널 음악 트랙 생성",
+      "prompt": "음악을 설명하세요",
+      "promptPlaceholder": "부드러운 현악기가伴奏하는 편안한 피아노 멜로디...",
+      "genre": "장르",
+      "duration": "길이",
+      "generate": "음악 생성",
+      "generating": "생성 중...",
+      "download": "다운로드"
+    },
+    "video": {
+      "title": "AI 비디오 생성",
+      "subtitle": "전문 비디오 제작",
+      "prompt": "비디오를 설명하세요",
+      "promptPlaceholder": "부드러운 전환이 있는 제품 쇼케이스...",
+      "style": "스타일",
+      "styleOptions": {
+        "realistic": "리얼",
+        "cinematic": "시네마틱",
+        "animated": "애니메이션",
+        "artistic": "예술적"
+      },
+      "duration": "길이",
+      "quality": "품질",
+      "stabilization": "비디오 안정화",
+      "antiDistortion": "왜곡 보정",
+      "generate": "비디오 생성",
+      "generating": "생성 중...",
+      "download": "다운로드"
+    }
+  },
+  "contact": {
+    "title": "문의하기",
+    "subtitle": "문의사항이 있으시면 말씀해 주세요",
+    "form": {
+      "email": "이메일 주소",
+      "emailPlaceholder": "your@email.com",
+      "message": "메시지",
+      "messagePlaceholder": "어떻게 도와드릴까요?",
+      "submit": "메시지 보내기",
+      "sending": "전송 중...",
+      "success": "메시지가 성공적으로 전송되었습니다!곧 회신드리겠습니다.",
+      "error": "메시지 전송에 실패했습니다.다시 시도해 주세요."
+    },
+    "validation": {
+      "emailRequired": "이메일은 필수입니다",
+      "emailInvalid": "유효한 이메일을 입력해 주세요",
+      "messageRequired": "메시지는 필수입니다",
+      "messageMinLength": "메시지는 최소 10자 이상이어야 합니다"
+    },
+    "info": {
+      "title": "연락처",
+      "email": "이메일",
+      "response": "일반적으로 24시간 내에 답변드립니다"
+    }
+  },
+  "footer": {
+    "product": "제품",
+    "company": "회사",
+    "resources": "리소스",
+    "legal": "법적",
+    "features": "기능",
+    "pricing": "가격",
+    "api": "API",
+    "about": "회사 소개",
+    "blog": "블로그",
+    "careers": "채용",
+    "documentation": "문서",
+    "tutorials": "튜토리얼",
+    "support": "지원",
+    "privacy": "개인정보 처리방침",
+    "terms": "서비스 약관",
+    "cookies": "쿠키 정책",
+    "copyright": "© {year} DUALAIHUB. All rights reserved."
+  },
+  "admin": {
+    "dashboard": {
+      "title": "관리자 대시보드",
+      "totalUsers": "총 사용자",
+      "activeUsers": "활성 사용자",
+      "totalRevenue": "총 수익",
+      "totalTransactions": "총 거래"
+    },
+    "users": {
+      "title": "사용자 관리",
+      "search": "사용자 검색...",
+      "name": "이름",
+      "email": "이메일",
+      "role": "역할",
+      "plan": "플랜",
+      "credits": "크레딧",
+      "joined": "가입일",
+      "actions": "작업"
+    },
+    "transactions": {
+      "title": "거래",
+      "user": "사용자",
+      "type": "유형",
+      "amount": "금액",
+      "status": "상태",
+      "date": "날짜",
+      "actions": "작업"
+    },
+    "wallet": {
+      "title": "지갑 설정",
+      "usdtAddress": "USDT TRC20 주소",
+      "updateSuccess": "지갑 주소가 성공적으로 업데이트되었습니다"
+    },
+    "aiConfig": {
+      "title": "AI 설정",
+      "providers": "AI 제공업체",
+      "enabled": "활성화",
+      "disabled": "비활성화"
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "페이지를 찾을 수 없습니다",
+      "message": "찾고 있는 페이지가 존재하지 않습니다.",
+      "button": "홈으로 가기"
+    },
+    "500": {
+      "title": "서버 오류",
+      "message": "서버에 문제가 발생했습니다.",
+      "button": "다시 시도"
+    },
+    "unauthorized": "이 페이지에 접근하려면 로그인이 필요합니다",
+    "forbidden": "이 페이지에 접근할 권한이 없습니다"
+  }
+}

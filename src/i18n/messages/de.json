@@ -1,0 +1,430 @@
+{
+  "common": {
+    "siteName": "DUALAIHUB",
+    "siteDescription": "Globale KI-Plattform - Chinesische & Globale KI-Automatische Planung",
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolg!",
+    "submit": "Absenden",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "back": "Zurück",
+    "next": "Weiter",
+    "close": "Schließen",
+    "search": "Suchen",
+    "noResults": "Keine Ergebnisse gefunden",
+    "tryAgain": "Erneut versuchen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "pricing": "Preise",
+    "contact": "Kontakt",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "dashboard": "Dashboard",
+    "logout": "Abmelden",
+    "profile": "Profil",
+    "settings": "Einstellungen"
+  },
+  "home": {
+    "hero": {
+      "title": "Doppelte KI-Power, Eine Plattform",
+      "subtitle": "Automatische intelligente Routung zwischen chinesischer KI und globaler KI für optimale Ergebnisse",
+      "cta": "Kostenlos starten",
+      "learnMore": "Mehr erfahren"
+    },
+    "features": {
+      "title": "Leistungsstarke KI-Dienste",
+      "subtitle": "Zugang zu den besten KI-Modellen von chinesischen und globalen Anbietern",
+      "text": {
+        "title": "KI-Text",
+        "description": "Erstellen Sie hochwertige Inhalte, Artikel und Copywriting mit intelligenter Modellauswahl"
+      },
+      "code": {
+        "title": "KI-Code",
+        "description": "Code mit fortschrittlicher KI-Unterstützung schreiben, debuggen und optimieren"
+      },
+      "image": {
+        "title": "KI-Bild",
+        "description": "Erstellen Sie atemberaubende Bilder mit realistischen oder künstlerischen Stilen"
+      },
+      "music": {
+        "title": "KI-Musik",
+        "description": "Generieren Sie originale Musiktitel und Audioinhalte"
+      },
+      "video": {
+        "title": "KI-Video",
+        "description": "Erstellen Sie professionelle Videos mit hochwertiger Stabilisierung"
+      },
+      "scheduling": {
+        "title": "Intelligente Planung",
+        "description": "Automatische Weiterleitung an das beste KI-Modell für Ihre Aufgabe"
+      }
+    },
+    "aiRouting": {
+      "title": "Intelligente KI-Routung",
+      "subtitle": "Unser System wählt automatisch den optimalen KI-Anbieter basierend auf Ihrer Aufgabe",
+      "chineseAI": {
+        "title": "Chinesische KI",
+        "description": "Kimi, Doubao, Qwen, Zhipu - Am besten für realistische Inhalte, Porträts und chinesischen Text",
+        "features": ["Realistisches Video", "Porträtgenerierung", "Chinesischer Text", "Codegenerierung"]
+      },
+      "globalAI": {
+        "title": "Globale KI",
+        "description": "GPT, Claude, Pika, Sora - Am besten für kreative und künstlerische Inhalte",
+        "features": ["Kreatives Schreiben", "Künstlerische Bilder", "Innovative Ideen", "Stiltransfer"]
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihren Workflow zu transformieren?",
+      "subtitle": "Schließen Sie sich Tausenden von Nutzern an, die die doppelte KI-Power nutzen",
+      "button": "Kostenlose Testversion"
+    }
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preisgestaltung",
+    "subtitle": "Wählen Sie den Plan, der zu Ihren Bedürfnissen passt",
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "savePercent": "20% sparen",
+    "popular": "Am beliebtesten",
+    "plans": {
+      "free": {
+        "name": "Kostenlos",
+        "price": "0€",
+        "period": "/Monat",
+        "description": "Perfekt zum Ausprobieren unserer Plattform",
+        "features": [
+          "100 Credits pro Tag",
+          "Basis-KI-Modelle",
+          "Community-Support",
+          "Standard-Antwortzeit"
+        ]
+      },
+      "starter": {
+        "name": "Starter",
+        "price": "9,99€",
+        "period": "/Monat",
+        "description": "Ideal für Einzelpersonen und kleine Projekte",
+        "features": [
+          "1.000 Credits pro Tag",
+          "Alle KI-Modelle",
+          "Prioritäts-Support",
+          "Erweiterte Funktionen",
+          "API-Zugang"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "29,99€",
+        "period": "/Monat",
+        "description": "Ideal für Fachleute und Teams",
+        "features": [
+          "5.000 Credits pro Tag",
+          "Alle KI-Modelle",
+          "24/7 Prioritäts-Support",
+          "Alle erweiterten Funktionen",
+          "Vollständiger API-Zugang",
+          "Benutzerdefinierte Workflows"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Individuell",
+        "period": "",
+        "description": "Für große Organisationen mit individuellen Anforderungen",
+        "features": [
+          "Unbegrenzte Credits",
+          "Alle KI-Modelle",
+          "Dedizierter Support-Manager",
+          "Benutzerdefinierte Integrationen",
+          "SLA-Garantie",
+          "On-Premise-Option"
+        ]
+      }
+    },
+    "getStarted": "Loslegen",
+    "contactSales": "Vertrieb kontaktieren",
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "q1": "Was sind Credits?",
+      "a1": "Credits werden verwendet, um auf KI-Dienste zuzugreifen. Verschiedene Dienste verbrauchen je nach Komplexität unterschiedliche Mengen an Credits.",
+      "q2": "Kann ich meinen Plan upgraden oder downgraden?",
+      "a2": "Ja, Sie können Ihren Plan jederzeit ändern. Änderungen treten sofort in Kraft und die Abrechnung wird anteilig berechnet.",
+      "q3": "Welche Zahlungsmethoden akzeptieren Sie?",
+      "a3": "Wir akzeptieren Kreditkarten (Stripe), PayPal und Kryptowährungen (USDT TRC20).",
+      "q4": "Gibt es eine kostenlose Testversion?",
+      "a4": "Ja! Unser kostenloser Plan gibt Ihnen 100 Credits pro Tag, um unsere Plattform zu erkunden."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Willkommen zurück",
+      "subtitle": "Melden Sie sich bei Ihrem Konto an",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "rememberMe": "Angemeldet bleiben",
+      "forgotPassword": "Passwort vergessen?",
+      "submit": "Anmelden",
+      "noAccount": "Noch kein Konto?",
+      "register": "Registrieren",
+      "orContinueWith": "Oder fortfahren mit",
+      "google": "Google",
+      "github": "GitHub",
+      "discord": "Discord"
+    },
+    "register": {
+      "title": "Konto erstellen",
+      "subtitle": "Starten Sie mit DUALAIHUB",
+      "name": "Vollständiger Name",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "agree": "Ich stimme den",
+      "terms": "Nutzungsbedingungen",
+      "and": "und der",
+      "privacy": "Datenschutzrichtlinie",
+      "submit": "Konto erstellen",
+      "haveAccount": "Haben Sie bereits ein Konto?",
+      "login": "Anmelden"
+    },
+    "forgotPassword": {
+      "title": "Passwort zurücksetzen",
+      "subtitle": "Geben Sie Ihre E-Mail ein, um einen Link zum Zurücksetzen zu erhalten",
+      "email": "E-Mail",
+      "submit": "Link zum Zurücksetzen senden",
+      "backToLogin": "Zurück zur Anmeldung",
+      "success": "Überprüfen Sie Ihre E-Mail für den Link zum Zurücksetzen"
+    }
+  },
+  "dashboard": {
+    "welcome": "Willkommen zurück",
+    "overview": "Übersicht",
+    "credits": {
+      "title": "Credits",
+      "remaining": "Verbleibend",
+      "used": "Verwendet",
+      "daily": "Tageskontingent",
+      "resetIn": "Wird zurückgesetzt in"
+    },
+    "recentActivity": "Letzte Aktivität",
+    "quickActions": "Schnellaktionen",
+    "services": {
+      "text": "KI-Text",
+      "code": "KI-Code",
+      "image": "KI-Bild",
+      "music": "KI-Musik",
+      "video": "KI-Video"
+    },
+    "history": {
+      "title": "Verlauf",
+      "type": "Typ",
+      "prompt": "Prompt",
+      "model": "Modell",
+      "credits": "Credits",
+      "status": "Status",
+      "date": "Datum",
+      "actions": "Aktionen",
+      "noResults": "Kein Verlauf gefunden",
+      "viewDetails": "Details anzeigen"
+    },
+    "quota": {
+      "title": "Kontingentverwaltung",
+      "dailyQuota": "Tageskontingent",
+      "totalCredits": "Gesamte Credits",
+      "usedToday": "Heute verwendet",
+      "remaining": "Verbleibend",
+      "resetTime": "Tägliche Zurücksetzungszeit",
+      "upgradePlan": "Plan upgraden"
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "profile": "Profil",
+      "account": "Konto",
+      "preferences": "Präferenzen",
+      "security": "Sicherheit",
+      "notifications": "Benachrichtigungen",
+      "apiKeys": "API-Schlüssel"
+    }
+  },
+  "ai": {
+    "text": {
+      "title": "KI-Textgenerierung",
+      "subtitle": "Erstellen Sie hochwertige Textinhalte",
+      "prompt": "Geben Sie Ihren Prompt ein",
+      "promptPlaceholder": "Beschreiben Sie, was Sie generieren möchten...",
+      "style": "Stil",
+      "styleOptions": {
+        "realistic": "Realistisch",
+        "creative": "Kreativ",
+        "professional": "Professionell",
+        "casual": "Lässig"
+      },
+      "generate": "Generieren",
+      "generating": "Generieren...",
+      "result": "Ergebnis",
+      "copy": "Kopieren",
+      "regenerate": "Erneut generieren"
+    },
+    "code": {
+      "title": "KI-Code-Assistent",
+      "subtitle": "Code schreiben, debuggen und optimieren",
+      "prompt": "Beschreiben Sie, was Sie brauchen",
+      "promptPlaceholder": "Beschreiben Sie den Code, den Sie generieren möchten, oder das Problem, bei dem Sie Hilfe benötigen...",
+      "language": "Programmiersprache",
+      "generate": "Code generieren",
+      "generating": "Generieren...",
+      "result": "Generierter Code",
+      "copy": "Code kopieren"
+    },
+    "image": {
+      "title": "KI-Bildgenerierung",
+      "subtitle": "Erstellen Sie atemberaubende Bilder aus Text",
+      "prompt": "Beschreiben Sie Ihr Bild",
+      "promptPlaceholder": "Ein wunderschöner Sonnenuntergang über Bergen...",
+      "style": "Stil",
+      "styleOptions": {
+        "realistic": "Realistisch",
+        "artistic": "Künstlerisch",
+        "anime": "Anime",
+        "abstract": "Abstrakt"
+      },
+      "size": "Größe",
+      "generate": "Bild generieren",
+      "generating": "Generieren...",
+      "download": "Herunterladen"
+    },
+    "music": {
+      "title": "KI-Musikgenerierung",
+      "subtitle": "Erstellen Sie originale Musiktitel",
+      "prompt": "Beschreiben Sie die Musik",
+      "promptPlaceholder": "Eine beruhigende Klaviersonate mit sanften Streichern...",
+      "genre": "Genre",
+      "duration": "Dauer",
+      "generate": "Musik generieren",
+      "generating": "Generieren...",
+      "download": "Herunterladen"
+    },
+    "video": {
+      "title": "KI-Videogenerierung",
+      "subtitle": "Erstellen Sie professionelle Videos",
+      "prompt": "Beschreiben Sie Ihr Video",
+      "promptPlaceholder": "Eine Produktpräsentation mit sanften Übergängen...",
+      "style": "Stil",
+      "styleOptions": {
+        "realistic": "Realistisch",
+        "cinematic": "Kinematisch",
+        "animated": "Animiert",
+        "artistic": "Künstlerisch"
+      },
+      "duration": "Dauer",
+      "quality": "Qualität",
+      "stabilization": "Videostabilisierung",
+      "antiDistortion": "Anti-Verzerrung",
+      "generate": "Video generieren",
+      "generating": "Generieren...",
+      "download": "Herunterladen"
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Wir freuen uns von Ihnen zu hören",
+    "form": {
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "ihre@email.com",
+      "message": "Nachricht",
+      "messagePlaceholder": "Wie können wir Ihnen helfen?",
+      "submit": "Nachricht senden",
+      "sending": "Senden...",
+      "success": "Nachricht erfolgreich gesendet! Wir werden uns bald bei Ihnen melden.",
+      "error": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+    },
+    "validation": {
+      "emailRequired": "E-Mail ist erforderlich",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail ein",
+      "messageRequired": "Nachricht ist erforderlich",
+      "messageMinLength": "Nachricht muss mindestens 10 Zeichen lang sein"
+    },
+    "info": {
+      "title": "Kontakt aufnehmen",
+      "email": "E-Mail",
+      "response": "Wir antworten normalerweise innerhalb von 24 Stunden"
+    }
+  },
+  "footer": {
+    "product": "Produkt",
+    "company": "Unternehmen",
+    "resources": "Ressourcen",
+    "legal": "Rechtliches",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "api": "API",
+    "about": "Über uns",
+    "blog": "Blog",
+    "careers": "Karriere",
+    "documentation": "Dokumentation",
+    "tutorials": "Tutorials",
+    "support": "Support",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie-Richtlinie",
+    "copyright": "© {year} DUALAIHUB. Alle Rechte vorbehalten."
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Admin-Dashboard",
+      "totalUsers": "Gesamtnutzer",
+      "activeUsers": "Aktive Nutzer",
+      "totalRevenue": "Gesamtumsatz",
+      "totalTransactions": "Gesamttransaktionen"
+    },
+    "users": {
+      "title": "Benutzerverwaltung",
+      "search": "Benutzer suchen...",
+      "name": "Name",
+      "email": "E-Mail",
+      "role": "Rolle",
+      "plan": "Plan",
+      "credits": "Credits",
+      "joined": "Beigetreten",
+      "actions": "Aktionen"
+    },
+    "transactions": {
+      "title": "Transaktionen",
+      "user": "Benutzer",
+      "type": "Typ",
+      "amount": "Betrag",
+      "status": "Status",
+      "date": "Datum",
+      "actions": "Aktionen"
+    },
+    "wallet": {
+      "title": "Wallet-Einstellungen",
+      "usdtAddress": "USDT TRC20-Adresse",
+      "updateSuccess": "Wallet-Adresse erfolgreich aktualisiert"
+    },
+    "aiConfig": {
+      "title": "KI-Konfiguration",
+      "providers": "KI-Anbieter",
+      "enabled": "Aktiviert",
+      "disabled": "Deaktiviert"
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "Seite nicht gefunden",
+      "message": "Die gesuchte Seite existiert nicht.",
+      "button": "Zur Startseite"
+    },
+    "500": {
+      "title": "Serverfehler",
+      "message": "Auf unserer Seite ist etwas schiefgelaufen.",
+      "button": "Erneut versuchen"
+    },
+    "unauthorized": "Sie müssen angemeldet sein, um auf diese Seite zuzugreifen",
+    "forbidden": "Sie haben keine Berechtigung, auf diese Seite zuzugreifen"
+  }
+}

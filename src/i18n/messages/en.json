@@ -1,0 +1,430 @@
+{
+  "common": {
+    "siteName": "DUALAIHUB",
+    "siteDescription": "Global AI Platform - Chinese & Global AI Auto-Scheduling",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "search": "Search",
+    "noResults": "No results found",
+    "tryAgain": "Try Again"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "home": {
+    "hero": {
+      "title": "Dual AI Power, One Platform",
+      "subtitle": "Automatic intelligent routing between Chinese AI and Global AI for optimal results",
+      "cta": "Get Started Free",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Powerful AI Services",
+      "subtitle": "Access the best AI models from both Chinese and Global providers",
+      "text": {
+        "title": "AI Text",
+        "description": "Generate high-quality content, articles, and copywriting with intelligent model selection"
+      },
+      "code": {
+        "title": "AI Code",
+        "description": "Write, debug, and optimize code with advanced AI assistance"
+      },
+      "image": {
+        "title": "AI Image",
+        "description": "Create stunning images with realistic or artistic styles"
+      },
+      "music": {
+        "title": "AI Music",
+        "description": "Generate original music tracks and audio content"
+      },
+      "video": {
+        "title": "AI Video",
+        "description": "Create professional videos with quality stabilization"
+      },
+      "scheduling": {
+        "title": "Smart Scheduling",
+        "description": "Automatic routing to the best AI model for your task"
+      }
+    },
+    "aiRouting": {
+      "title": "Intelligent AI Routing",
+      "subtitle": "Our system automatically selects the optimal AI provider based on your task",
+      "chineseAI": {
+        "title": "Chinese AI",
+        "description": "Kimi, Doubao, Qwen, Zhipu - Best for realistic content, portraits, and Chinese text",
+        "features": ["Realistic Video", "Portrait Generation", "Chinese Text", "Code Generation"]
+      },
+      "globalAI": {
+        "title": "Global AI",
+        "description": "GPT, Claude, Pika, Sora - Best for creative and artistic content",
+        "features": ["Creative Writing", "Artistic Images", "Innovative Ideas", "Style Transfer"]
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Workflow?",
+      "subtitle": "Join thousands of users leveraging dual AI power",
+      "button": "Start Free Trial"
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that fits your needs",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "savePercent": "Save 20%",
+    "popular": "Most Popular",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "period": "/month",
+        "description": "Perfect for trying out our platform",
+        "features": [
+          "100 credits per day",
+          "Basic AI models",
+          "Community support",
+          "Standard response time"
+        ]
+      },
+      "starter": {
+        "name": "Starter",
+        "price": "$9.99",
+        "period": "/month",
+        "description": "Great for individuals and small projects",
+        "features": [
+          "1,000 credits per day",
+          "All AI models",
+          "Priority support",
+          "Advanced features",
+          "API access"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$29.99",
+        "period": "/month",
+        "description": "Ideal for professionals and teams",
+        "features": [
+          "5,000 credits per day",
+          "All AI models",
+          "24/7 priority support",
+          "All advanced features",
+          "Full API access",
+          "Custom workflows"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "description": "For large organizations with custom needs",
+        "features": [
+          "Unlimited credits",
+          "All AI models",
+          "Dedicated support manager",
+          "Custom integrations",
+          "SLA guarantee",
+          "On-premise option"
+        ]
+      }
+    },
+    "getStarted": "Get Started",
+    "contactSales": "Contact Sales",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "What are credits?",
+      "a1": "Credits are used to access AI services. Different services consume different amounts of credits based on complexity.",
+      "q2": "Can I upgrade or downgrade my plan?",
+      "a2": "Yes, you can change your plan at any time. Changes take effect immediately and billing is prorated.",
+      "q3": "What payment methods do you accept?",
+      "a3": "We accept credit cards (Stripe), PayPal, and cryptocurrency (USDT TRC20).",
+      "q4": "Is there a free trial?",
+      "a4": "Yes! Our Free plan gives you 100 credits per day to explore our platform."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to your account",
+      "email": "Email",
+      "password": "Password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "submit": "Sign In",
+      "noAccount": "Don't have an account?",
+      "register": "Register",
+      "orContinueWith": "Or continue with",
+      "google": "Google",
+      "github": "GitHub",
+      "discord": "Discord"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Get started with DUALAIHUB",
+      "name": "Full Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "agree": "I agree to the",
+      "terms": "Terms of Service",
+      "and": "and",
+      "privacy": "Privacy Policy",
+      "submit": "Create Account",
+      "haveAccount": "Already have an account?",
+      "login": "Sign In"
+    },
+    "forgotPassword": {
+      "title": "Reset Password",
+      "subtitle": "Enter your email to receive a reset link",
+      "email": "Email",
+      "submit": "Send Reset Link",
+      "backToLogin": "Back to Login",
+      "success": "Check your email for the reset link"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "overview": "Overview",
+    "credits": {
+      "title": "Credits",
+      "remaining": "Remaining",
+      "used": "Used",
+      "daily": "Daily Quota",
+      "resetIn": "Resets in"
+    },
+    "recentActivity": "Recent Activity",
+    "quickActions": "Quick Actions",
+    "services": {
+      "text": "AI Text",
+      "code": "AI Code",
+      "image": "AI Image",
+      "music": "AI Music",
+      "video": "AI Video"
+    },
+    "history": {
+      "title": "History",
+      "type": "Type",
+      "prompt": "Prompt",
+      "model": "Model",
+      "credits": "Credits",
+      "status": "Status",
+      "date": "Date",
+      "actions": "Actions",
+      "noResults": "No history found",
+      "viewDetails": "View Details"
+    },
+    "quota": {
+      "title": "Quota Management",
+      "dailyQuota": "Daily Quota",
+      "totalCredits": "Total Credits",
+      "usedToday": "Used Today",
+      "remaining": "Remaining",
+      "resetTime": "Daily Reset Time",
+      "upgradePlan": "Upgrade Plan"
+    },
+    "settings": {
+      "title": "Settings",
+      "profile": "Profile",
+      "account": "Account",
+      "preferences": "Preferences",
+      "security": "Security",
+      "notifications": "Notifications",
+      "apiKeys": "API Keys"
+    }
+  },
+  "ai": {
+    "text": {
+      "title": "AI Text Generation",
+      "subtitle": "Generate high-quality text content",
+      "prompt": "Enter your prompt",
+      "promptPlaceholder": "Describe what you want to generate...",
+      "style": "Style",
+      "styleOptions": {
+        "realistic": "Realistic",
+        "creative": "Creative",
+        "professional": "Professional",
+        "casual": "Casual"
+      },
+      "generate": "Generate",
+      "generating": "Generating...",
+      "result": "Result",
+      "copy": "Copy",
+      "regenerate": "Regenerate"
+    },
+    "code": {
+      "title": "AI Code Assistant",
+      "subtitle": "Write, debug, and optimize code",
+      "prompt": "Describe what you need",
+      "promptPlaceholder": "Describe the code you want to generate or the problem you need help with...",
+      "language": "Programming Language",
+      "generate": "Generate Code",
+      "generating": "Generating...",
+      "result": "Generated Code",
+      "copy": "Copy Code"
+    },
+    "image": {
+      "title": "AI Image Generation",
+      "subtitle": "Create stunning images from text",
+      "prompt": "Describe your image",
+      "promptPlaceholder": "A beautiful sunset over mountains...",
+      "style": "Style",
+      "styleOptions": {
+        "realistic": "Realistic",
+        "artistic": "Artistic",
+        "anime": "Anime",
+        "abstract": "Abstract"
+      },
+      "size": "Size",
+      "generate": "Generate Image",
+      "generating": "Generating...",
+      "download": "Download"
+    },
+    "music": {
+      "title": "AI Music Generation",
+      "subtitle": "Create original music tracks",
+      "prompt": "Describe the music",
+      "promptPlaceholder": "A calming piano melody with soft strings...",
+      "genre": "Genre",
+      "duration": "Duration",
+      "generate": "Generate Music",
+      "generating": "Generating...",
+      "download": "Download"
+    },
+    "video": {
+      "title": "AI Video Generation",
+      "subtitle": "Create professional videos",
+      "prompt": "Describe your video",
+      "promptPlaceholder": "A product showcase with smooth transitions...",
+      "style": "Style",
+      "styleOptions": {
+        "realistic": "Realistic",
+        "cinematic": "Cinematic",
+        "animated": "Animated",
+        "artistic": "Artistic"
+      },
+      "duration": "Duration",
+      "quality": "Quality",
+      "stabilization": "Video Stabilization",
+      "antiDistortion": "Anti-Distortion",
+      "generate": "Generate Video",
+      "generating": "Generating...",
+      "download": "Download"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you",
+    "form": {
+      "email": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Failed to send message. Please try again."
+    },
+    "validation": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "messageRequired": "Message is required",
+      "messageMinLength": "Message must be at least 10 characters"
+    },
+    "info": {
+      "title": "Get in Touch",
+      "email": "Email",
+      "response": "We typically respond within 24 hours"
+    }
+  },
+  "footer": {
+    "product": "Product",
+    "company": "Company",
+    "resources": "Resources",
+    "legal": "Legal",
+    "features": "Features",
+    "pricing": "Pricing",
+    "api": "API",
+    "about": "About Us",
+    "blog": "Blog",
+    "careers": "Careers",
+    "documentation": "Documentation",
+    "tutorials": "Tutorials",
+    "support": "Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "copyright": "© {year} DUALAIHUB. All rights reserved."
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "totalUsers": "Total Users",
+      "activeUsers": "Active Users",
+      "totalRevenue": "Total Revenue",
+      "totalTransactions": "Total Transactions"
+    },
+    "users": {
+      "title": "User Management",
+      "search": "Search users...",
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "plan": "Plan",
+      "credits": "Credits",
+      "joined": "Joined",
+      "actions": "Actions"
+    },
+    "transactions": {
+      "title": "Transactions",
+      "user": "User",
+      "type": "Type",
+      "amount": "Amount",
+      "status": "Status",
+      "date": "Date",
+      "actions": "Actions"
+    },
+    "wallet": {
+      "title": "Wallet Settings",
+      "usdtAddress": "USDT TRC20 Address",
+      "updateSuccess": "Wallet address updated successfully"
+    },
+    "aiConfig": {
+      "title": "AI Configuration",
+      "providers": "AI Providers",
+      "enabled": "Enabled",
+      "disabled": "Disabled"
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "Page Not Found",
+      "message": "The page you're looking for doesn't exist.",
+      "button": "Go Home"
+    },
+    "500": {
+      "title": "Server Error",
+      "message": "Something went wrong on our end.",
+      "button": "Try Again"
+    },
+    "unauthorized": "You need to be logged in to access this page",
+    "forbidden": "You don't have permission to access this page"
+  }
+}

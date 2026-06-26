@@ -1,0 +1,430 @@
+{
+  "common": {
+    "siteName": "DUALAIHUB",
+    "siteDescription": "Plataforma Global de IA - Programación Automática de IA China y Global",
+    "loading": "Cargando...",
+    "error": "Se produjo un error",
+    "success": "¡Éxito!",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "close": "Cerrar",
+    "search": "Buscar",
+    "noResults": "No se encontraron resultados",
+    "tryAgain": "Intentar de nuevo"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "dashboard": "Panel de control",
+    "logout": "Cerrar sesión",
+    "profile": "Perfil",
+    "settings": "Configuración"
+  },
+  "home": {
+    "hero": {
+      "title": "Doble Poder de IA, Una Plataforma",
+      "subtitle": "Enrutamiento inteligente automático entre IA china e IA global para resultados óptimos",
+      "cta": "Comenzar gratis",
+      "learnMore": "Más información"
+    },
+    "features": {
+      "title": "Servicios de IA Potentes",
+      "subtitle": "Accede a los mejores modelos de IA de proveedores chinos y globales",
+      "text": {
+        "title": "Texto IA",
+        "description": "Genera contenido, artículos y copywriting de alta calidad con selección inteligente de modelos"
+      },
+      "code": {
+        "title": "Código IA",
+        "description": "Escribe, depura y optimiza código con asistencia de IA avanzada"
+      },
+      "image": {
+        "title": "Imagen IA",
+        "description": "Crea imágenes impresionantes con estilos realistas o artísticos"
+      },
+      "music": {
+        "title": "Música IA",
+        "description": "Genera pistas de música original y contenido de audio"
+      },
+      "video": {
+        "title": "Video IA",
+        "description": "Crea videos profesionales con estabilización de calidad"
+      },
+      "scheduling": {
+        "title": "Programación Inteligente",
+        "description": "Enrutamiento automático al mejor modelo de IA para tu tarea"
+      }
+    },
+    "aiRouting": {
+      "title": "Enrutamiento de IA Inteligente",
+      "subtitle": "Nuestro sistema selecciona automáticamente el proveedor de IA óptimo según tu tarea",
+      "chineseAI": {
+        "title": "IA China",
+        "description": "Kimi, Doubao, Qwen, Zhipu - Mejor para contenido realista, retratos y texto en chino",
+        "features": ["Video Realista", "Generación de Retratos", "Texto en Chino", "Generación de Código"]
+      },
+      "globalAI": {
+        "title": "IA Global",
+        "description": "GPT, Claude, Pika, Sora - Mejor para contenido creativo y artístico",
+        "features": ["Escritura Creativa", "Imágenes Artísticas", "Ideas Innovadoras", "Transferencia de Estilo"]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Transformar tu Flujo de Trabajo?",
+      "subtitle": "Únete a miles de usuarios aprovechando el poder dual de IA",
+      "button": "Prueba Gratuita"
+    }
+  },
+  "pricing": {
+    "title": "Precios Simples y Transparentes",
+    "subtitle": "Elige el plan que se ajuste a tus necesidades",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "savePercent": "Ahorra 20%",
+    "popular": "Más Popular",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "price": "$0",
+        "period": "/mes",
+        "description": "Perfecto para probar nuestra plataforma",
+        "features": [
+          "100 créditos por día",
+          "Modelos básicos de IA",
+          "Soporte comunitario",
+          "Tiempo de respuesta estándar"
+        ]
+      },
+      "starter": {
+        "name": "Starter",
+        "price": "$9.99",
+        "period": "/mes",
+        "description": "Ideal para individuos y pequeños proyectos",
+        "features": [
+          "1,000 créditos por día",
+          "Todos los modelos de IA",
+          "Soporte prioritario",
+          "Características avanzadas",
+          "Acceso a API"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$29.99",
+        "period": "/mes",
+        "description": "Ideal para profesionales y equipos",
+        "features": [
+          "5,000 créditos por día",
+          "Todos los modelos de IA",
+          "Soporte prioritario 24/7",
+          "Todas las características avanzadas",
+          "Acceso completo a API",
+          "Flujos de trabajo personalizados"
+        ]
+      },
+      "enterprise": {
+        "name": "Empresa",
+        "price": "Personalizado",
+        "period": "",
+        "description": "Para grandes organizaciones con necesidades personalizadas",
+        "features": [
+          "Créditos ilimitados",
+          "Todos los modelos de IA",
+          "Gerente de soporte dedicado",
+          "Integraciones personalizadas",
+          "Garantía SLA",
+          "Opción on-premise"
+        ]
+      }
+    },
+    "getStarted": "Comenzar",
+    "contactSales": "Contactar Ventas",
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": "¿Qué son los créditos?",
+      "a1": "Los créditos se utilizan para acceder a los servicios de IA. Los diferentes servicios consumen diferentes cantidades de créditos según la complejidad.",
+      "q2": "¿Puedo actualizar o downgrade mi plan?",
+      "a2": "Sí, puedes cambiar tu plan en cualquier momento. Los cambios entran en vigor inmediatamente y la facturación se prorratea.",
+      "q3": "¿Qué métodos de pago aceptan?",
+      "a3": "Aceptamos tarjetas de crédito (Stripe), PayPal y criptomonedas (USDT TRC20).",
+      "q4": "¿Hay una prueba gratuita?",
+      "a4": "¡Sí! Nuestro plan Gratis te da 100 créditos por día para explorar nuestra plataforma."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bienvenido de nuevo",
+      "subtitle": "Inicia sesión en tu cuenta",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "rememberMe": "Recordarme",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "submit": "Iniciar sesión",
+      "noAccount": "¿No tienes una cuenta?",
+      "register": "Registrarse",
+      "orContinueWith": "O continúa con",
+      "google": "Google",
+      "github": "GitHub",
+      "discord": "Discord"
+    },
+    "register": {
+      "title": "Crear Cuenta",
+      "subtitle": "Comienza con DUALAIHUB",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "agree": "Acepto los",
+      "terms": "Términos de Servicio",
+      "and": "y la",
+      "privacy": "Política de Privacidad",
+      "submit": "Crear Cuenta",
+      "haveAccount": "¿Ya tienes una cuenta?",
+      "login": "Iniciar sesión"
+    },
+    "forgotPassword": {
+      "title": "Restablecer Contraseña",
+      "subtitle": "Ingresa tu correo para recibir un enlace de restablecimiento",
+      "email": "Correo electrónico",
+      "submit": "Enviar Enlace de Restablecimiento",
+      "backToLogin": "Volver al Inicio de Sesión",
+      "success": "Revisa tu correo para el enlace de restablecimiento"
+    }
+  },
+  "dashboard": {
+    "welcome": "Bienvenido de nuevo",
+    "overview": "Resumen",
+    "credits": {
+      "title": "Créditos",
+      "remaining": "Restantes",
+      "used": "Usados",
+      "daily": "Cupo Diario",
+      "resetIn": "Se reinicia en"
+    },
+    "recentActivity": "Actividad Reciente",
+    "quickActions": "Acciones Rápidas",
+    "services": {
+      "text": "Texto IA",
+      "code": "Código IA",
+      "image": "Imagen IA",
+      "music": "Música IA",
+      "video": "Video IA"
+    },
+    "history": {
+      "title": "Historial",
+      "type": "Tipo",
+      "prompt": "Prompt",
+      "model": "Modelo",
+      "credits": "Créditos",
+      "status": "Estado",
+      "date": "Fecha",
+      "actions": "Acciones",
+      "noResults": "No se encontró historial",
+      "viewDetails": "Ver Detalles"
+    },
+    "quota": {
+      "title": "Gestión de Cupo",
+      "dailyQuota": "Cupo Diario",
+      "totalCredits": "Créditos Totales",
+      "usedToday": "Usado Hoy",
+      "remaining": "Restante",
+      "resetTime": "Hora de Reinicio Diario",
+      "upgradePlan": "Actualizar Plan"
+    },
+    "settings": {
+      "title": "Configuración",
+      "profile": "Perfil",
+      "account": "Cuenta",
+      "preferences": "Preferencias",
+      "security": "Seguridad",
+      "notifications": "Notificaciones",
+      "apiKeys": "Claves API"
+    }
+  },
+  "ai": {
+    "text": {
+      "title": "Generación de Texto IA",
+      "subtitle": "Genera contenido de texto de alta calidad",
+      "prompt": "Ingresa tu prompt",
+      "promptPlaceholder": "Describe lo que quieres generar...",
+      "style": "Estilo",
+      "styleOptions": {
+        "realistic": "Realista",
+        "creative": "Creativo",
+        "professional": "Profesional",
+        "casual": "Casual"
+      },
+      "generate": "Generar",
+      "generating": "Generando...",
+      "result": "Resultado",
+      "copy": "Copiar",
+      "regenerate": "Regenerar"
+    },
+    "code": {
+      "title": "Asistente de Código IA",
+      "subtitle": "Escribe, depura y optimiza código",
+      "prompt": "Describe lo que necesitas",
+      "promptPlaceholder": "Describe el código que quieres generar o el problema con el que necesitas ayuda...",
+      "language": "Lenguaje de Programación",
+      "generate": "Generar Código",
+      "generating": "Generando...",
+      "result": "Código Generado",
+      "copy": "Copiar Código"
+    },
+    "image": {
+      "title": "Generación de Imagen IA",
+      "subtitle": "Crea imágenes impresionantes desde texto",
+      "prompt": "Describe tu imagen",
+      "promptPlaceholder": "Un hermoso atardecer sobre montañas...",
+      "style": "Estilo",
+      "styleOptions": {
+        "realistic": "Realista",
+        "artistic": "Artístico",
+        "anime": "Anime",
+        "abstract": "Abstracto"
+      },
+      "size": "Tamaño",
+      "generate": "Generar Imagen",
+      "generating": "Generando...",
+      "download": "Descargar"
+    },
+    "music": {
+      "title": "Generación de Música IA",
+      "subtitle": "Crea pistas de música original",
+      "prompt": "Describe la música",
+      "promptPlaceholder": "Una melodía de piano relajante con cuerdas suaves...",
+      "genre": "Género",
+      "duration": "Duración",
+      "generate": "Generar Música",
+      "generating": "Generando...",
+      "download": "Descargar"
+    },
+    "video": {
+      "title": "Generación de Video IA",
+      "subtitle": "Crea videos profesionales",
+      "prompt": "Describe tu video",
+      "promptPlaceholder": "Una presentación de producto con transiciones suaves...",
+      "style": "Estilo",
+      "styleOptions": {
+        "realistic": "Realista",
+        "cinematic": "Cinematográfico",
+        "animated": "Animado",
+        "artistic": "Artístico"
+      },
+      "duration": "Duración",
+      "quality": "Calidad",
+      "stabilization": "Estabilización de Video",
+      "antiDistortion": "Anti-Distorsión",
+      "generate": "Generar Video",
+      "generating": "Generando...",
+      "download": "Descargar"
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Nos encantaría saber de ti",
+    "form": {
+      "email": "Dirección de Correo",
+      "emailPlaceholder": "tu@correo.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "¿Cómo podemos ayudarte?",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito! Te responderemos pronto.",
+      "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo."
+    },
+    "validation": {
+      "emailRequired": "El correo es requerido",
+      "emailInvalid": "Por favor ingresa un correo válido",
+      "messageRequired": "El mensaje es requerido",
+      "messageMinLength": "El mensaje debe tener al menos 10 caracteres"
+    },
+    "info": {
+      "title": "Ponerse en Contacto",
+      "email": "Correo",
+      "response": "Normalmente respondemos en 24 horas"
+    }
+  },
+  "footer": {
+    "product": "Producto",
+    "company": "Empresa",
+    "resources": "Recursos",
+    "legal": "Legal",
+    "features": "Características",
+    "pricing": "Precios",
+    "api": "API",
+    "about": "Acerca de Nosotros",
+    "blog": "Blog",
+    "careers": "Carreras",
+    "documentation": "Documentación",
+    "tutorials": "Tutoriales",
+    "support": "Soporte",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "cookies": "Política de Cookies",
+    "copyright": "© {year} DUALAIHUB. Todos los derechos reservados."
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Panel de Administración",
+      "totalUsers": "Usuarios Totales",
+      "activeUsers": "Usuarios Activos",
+      "totalRevenue": "Ingresos Totales",
+      "totalTransactions": "Transacciones Totales"
+    },
+    "users": {
+      "title": "Gestión de Usuarios",
+      "search": "Buscar usuarios...",
+      "name": "Nombre",
+      "email": "Correo",
+      "role": "Rol",
+      "plan": "Plan",
+      "credits": "Créditos",
+      "joined": "Fecha de Registro",
+      "actions": "Acciones"
+    },
+    "transactions": {
+      "title": "Transacciones",
+      "user": "Usuario",
+      "type": "Tipo",
+      "amount": "Monto",
+      "status": "Estado",
+      "date": "Fecha",
+      "actions": "Acciones"
+    },
+    "wallet": {
+      "title": "Configuración de Wallet",
+      "usdtAddress": "Dirección USDT TRC20",
+      "updateSuccess": "Dirección de wallet actualizada exitosamente"
+    },
+    "aiConfig": {
+      "title": "Configuración de IA",
+      "providers": "Proveedores de IA",
+      "enabled": "Habilitado",
+      "disabled": "Deshabilitado"
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "Página No Encontrada",
+      "message": "La página que buscas no existe.",
+      "button": "Ir al Inicio"
+    },
+    "500": {
+      "title": "Error del Servidor",
+      "message": "Algo salió mal en nuestro lado.",
+      "button": "Intentar de Nuevo"
+    },
+    "unauthorized": "Necesitas iniciar sesión para acceder a esta página",
+    "forbidden": "No tienes permiso para acceder a esta página"
+  }
+}

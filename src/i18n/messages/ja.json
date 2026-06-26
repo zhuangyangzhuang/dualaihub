@@ -1,0 +1,430 @@
+{
+  "common": {
+    "siteName": "DUALAIHUB",
+    "siteDescription": "グローバルAIプラットフォーム - 中国AI & グローバルAI自動スケジューリング",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "success": "成功！",
+    "submit": "送信",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "back": "戻る",
+    "next": "次へ",
+    "close": "閉じる",
+    "search": "検索",
+    "noResults": "結果が見つかりません",
+    "tryAgain": "再試行"
+  },
+  "nav": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "pricing": "料金",
+    "contact": "お問い合わせ",
+    "login": "ログイン",
+    "register": "登録",
+    "dashboard": "ダッシュボード",
+    "logout": "ログアウト",
+    "profile": "プロフィール",
+    "settings": "設定"
+  },
+  "home": {
+    "hero": {
+      "title": "二つのAIパワー、一つのプラットフォーム",
+      "subtitle": "中国AIとグローバルAIの自動スマートルーティングで最適な結果を",
+      "cta": "無料で始める",
+      "learnMore": "詳細を見る"
+    },
+    "features": {
+      "title": "強力なAIサービス",
+      "subtitle": "中国とグローバルプロバイダーから最高のAIモデルにアクセス",
+      "text": {
+        "title": "AIテキスト",
+        "description": "インテリジェントなモデル選択で高品質なコンテンツ、文章を作成"
+      },
+      "code": {
+        "title": "AIコード",
+        "description": "高度なAI支援でコードの記述、デバッグ、最適化"
+      },
+      "image": {
+        "title": "AI画像",
+        "description": "リアルまたはアーティスティックなスタイルで素晴らしい画像を作成"
+      },
+      "music": {
+        "title": "AI音楽",
+        "description": "オリジナル音楽トラックとオーディオコンテンツを生成"
+      },
+      "video": {
+        "title": "AI動画",
+        "description": "品質安定化を備えたプロフェッショナルな動画を作成"
+      },
+      "scheduling": {
+        "title": "スマートスケジューリング",
+        "description": "タスクに応じて最適なAIモデルに自動ルーティング"
+      }
+    },
+    "aiRouting": {
+      "title": "インテリジェントAIルーティング",
+      "subtitle": "タスクに基づいて最適なAIプロバイダーを自動選択",
+      "chineseAI": {
+        "title": "中国AI",
+        "description": "Kimi、豆包、通義千問、智譜 - リアルコンテンツ、ポートレート、中国語テキストに最適",
+        "features": ["リアル動画", "ポートレート生成", "中国語テキスト", "コード生成"]
+      },
+      "globalAI": {
+        "title": "グローバルAI",
+        "description": "GPT、Claude、Pika、Sora - クリエイティブでアーティスティックなコンテンツに最適",
+        "features": ["クリエイティブライティング", "アーティスティック画像", "革新的なアイデア", "スタイル転送"]
+      }
+    },
+    "cta": {
+      "title": "ワークフローを変革する準備はできましたか？",
+      "subtitle": "デュアルAIパワーを使った数千人のユーザーに加わりましょう",
+      "button": "無料トライアル"
+    }
+  },
+  "pricing": {
+    "title": "シンプルで透明な料金設定",
+    "subtitle": "あなたのニーズに合ったプランを選択",
+    "monthly": "月額",
+    "yearly": "年額",
+    "savePercent": "20%オフ",
+    "popular": "人気No.1",
+    "plans": {
+      "free": {
+        "name": "フリー",
+        "price": "¥0",
+        "period": "/月",
+        "description": "プラットフォームを試すのに最適",
+        "features": [
+          "每日100クレジット",
+          "基本AIモデル",
+          "コミュニティサポート",
+          "標準応答時間"
+        ]
+      },
+      "starter": {
+        "name": "スターター",
+        "price": "¥1,500",
+        "period": "/月",
+        "description": "個人や小プロジェクトに最適",
+        "features": [
+          "每日1,000クレジット",
+          "すべてのAIモデル",
+          "優先サポート",
+          "高度な機能",
+          "APIアクセス"
+        ]
+      },
+      "pro": {
+        "name": "プロ",
+        "price": "¥4,500",
+        "period": "/月",
+        "description": "プロフェッショナルやチームに最適",
+        "features": [
+          "每日5,000クレジット",
+          "すべてのAIモデル",
+          "24/7優先サポート",
+          "すべての高度な機能",
+          "完全APIアクセス",
+          "カスタムワークフロー"
+        ]
+      },
+      "enterprise": {
+        "name": "エンタープライズ",
+        "price": "カスタム",
+        "period": "",
+        "description": "カスタムニーズを持つ大企業向け",
+        "features": [
+          "無制限クレジット",
+          "すべてのAIモデル",
+          "専任サポートマネージャー",
+          "カスタム統合",
+          "SLA保証",
+          "オンプレミスオプション"
+        ]
+      }
+    },
+    "getStarted": "始める",
+    "contactSales": "営業に連絡",
+    "faq": {
+      "title": "よくある質問",
+      "q1": "クレジットとは何ですか？",
+      "a1": "クレジットはAIサービスにアクセスするために使用されます。複雑なサービスほど多くのクレジットを消費します。",
+      "q2": "プランのアップグレードまたはダウングレードはできますか？",
+      "a2": "はい、いつでもプランを変更できます。変更は即時適用され、請求は日割りで計算されます。",
+      "q3": "どのような支払い方法を受け付けていますか？",
+      "a3": "クレジットカード（Stripe）、PayPal、暗号通貨（USDT TRC20）を受け付けています。",
+      "q4": "無料試用はありますか？",
+      "a4": "はい！フリープランで每日100クレジットを得て、プラットフォームを試すことができます。"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "おかえりなさい",
+      "subtitle": "アカウントにログイン",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "rememberMe": "ログイン状態を保持",
+      "forgotPassword": "パスワードをお忘れですか？",
+      "submit": "ログイン",
+      "noAccount": "アカウントをお持ちでないですか？",
+      "register": "登録",
+      "orContinueWith": "または以下で続行",
+      "google": "Google",
+      "github": "GitHub",
+      "discord": "Discord"
+    },
+    "register": {
+      "title": "アカウント作成",
+      "subtitle": "DUALAIHUBを始めましょう",
+      "name": "氏名",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "confirmPassword": "パスワード確認",
+      "agree": "に同意します",
+      "terms": "利用規約",
+      "and": "および",
+      "privacy": "プライバシーポリシー",
+      "submit": "アカウント作成",
+      "haveAccount": "すでにアカウントをお持ちですか？",
+      "login": "ログイン"
+    },
+    "forgotPassword": {
+      "title": "パスワードリセット",
+      "subtitle": "リセットリンクを受け取るためにメールアドレスを入力",
+      "email": "メールアドレス",
+      "submit": "リセットリンクを送信",
+      "backToLogin": "ログインに戻る",
+      "success": "リセットリンクをメールで確認してください"
+    }
+  },
+  "dashboard": {
+    "welcome": "おかえりなさい",
+    "overview": "概要",
+    "credits": {
+      "title": "クレジット",
+      "remaining": "残り",
+      "used": "使用済み",
+      "daily": "デイリークォータ",
+      "resetIn": "リセットまで"
+    },
+    "recentActivity": "最近のアクティビティ",
+    "quickActions": "クイックアクション",
+    "services": {
+      "text": "AIテキスト",
+      "code": "AIコード",
+      "image": "AI画像",
+      "music": "AI音楽",
+      "video": "AI動画"
+    },
+    "history": {
+      "title": "履歴",
+      "type": "タイプ",
+      "prompt": "プロンプト",
+      "model": "モデル",
+      "credits": "クレジット",
+      "status": "ステータス",
+      "date": "日付",
+      "actions": "アクション",
+      "noResults": "履歴が見つかりません",
+      "viewDetails": "詳細を見る"
+    },
+    "quota": {
+      "title": "クォータ管理",
+      "dailyQuota": "デイリークォータ",
+      "totalCredits": "総クレジット",
+      "usedToday": "今日使用",
+      "remaining": "残り",
+      "resetTime": "デイリーリセット時間",
+      "upgradePlan": "プランをアップグレード"
+    },
+    "settings": {
+      "title": "設定",
+      "profile": "プロフィール",
+      "account": "アカウント",
+      "preferences": "環境設定",
+      "security": "セキュリティ",
+      "notifications": "通知",
+      "apiKeys": "APIキー"
+    }
+  },
+  "ai": {
+    "text": {
+      "title": "AIテキスト生成",
+      "subtitle": "高品質なテキストコンテンツを生成",
+      "prompt": "プロンプトを入力",
+      "promptPlaceholder": "生成したい内容を描述してください...",
+      "style": "スタイル",
+      "styleOptions": {
+        "realistic": "リアル",
+        "creative": "クリエイティブ",
+        "professional": "プロフェッショナル",
+        "casual": "カジュアル"
+      },
+      "generate": "生成",
+      "generating": "生成中...",
+      "result": "結果",
+      "copy": "コピー",
+      "regenerate": "再生成"
+    },
+    "code": {
+      "title": "AIコードアシスタント",
+      "subtitle": "コードの記述、デバッグ、最適化",
+      "prompt": "必要事項を描述",
+      "promptPlaceholder": "生成したいコードまたは助けを必要とする問題を描述してください...",
+      "language": "プログラミング言語",
+      "generate": "コードを生成",
+      "generating": "生成中...",
+      "result": "生成されたコード",
+      "copy": "コードをコピー"
+    },
+    "image": {
+      "title": "AI画像生成",
+      "subtitle": "テキストから素晴らしい画像を生成",
+      "prompt": "画像を描述",
+      "promptPlaceholder": "山の上の美しい夕焼け...",
+      "style": "スタイル",
+      "styleOptions": {
+        "realistic": "リアル",
+        "artistic": "アーティスティック",
+        "anime": "アニメ",
+        "abstract": "アブストラクト"
+      },
+      "size": "サイズ",
+      "generate": "画像を生成",
+      "generating": "生成中...",
+      "download": "ダウンロード"
+    },
+    "music": {
+      "title": "AI音楽生成",
+      "subtitle": "オリジナル音楽トラックを作成",
+      "prompt": "音楽を描述",
+      "promptPlaceholder": "柔らかい弦楽伴奏付きの穏やかなピアノメロディ...",
+      "genre": "ジャンル",
+      "duration": "長さ",
+      "generate": "音楽を生成",
+      "generating": "生成中...",
+      "download": "ダウンロード"
+    },
+    "video": {
+      "title": "AI動画生成",
+      "subtitle": "プロフェッショナルな動画を作成",
+      "prompt": "動画を描述",
+      "promptPlaceholder": "スムーズなトランジション付き製品紹介...",
+      "style": "スタイル",
+      "styleOptions": {
+        "realistic": "リアル",
+        "cinematic": "シネマティック",
+        "animated": "アニメーション",
+        "artistic": "アーティスティック"
+      },
+      "duration": "長さ",
+      "quality": "品質",
+      "stabilization": "動画安定化",
+      "antiDistortion": "歪み補正",
+      "generate": "動画を生成",
+      "generating": "生成中...",
+      "download": "ダウンロード"
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "お気軽にご連絡ください",
+    "form": {
+      "email": "メールアドレス",
+      "emailPlaceholder": "your@email.com",
+      "message": "メッセージ",
+      "messagePlaceholder": "ご質問やお手伝いできることはありますか？",
+      "submit": "メッセージを送信",
+      "sending": "送信中...",
+      "success": "メッセージが正常に送信されました！まもなくご返信いたします。",
+      "error": "メッセージの送信に失敗しました。もう一度お試しください。"
+    },
+    "validation": {
+      "emailRequired": "メールアドレスは必須です",
+      "emailInvalid": "有効なメールアドレスを入力してください",
+      "messageRequired": "メッセージは必須です",
+      "messageMinLength": "メッセージは10文字以上である必要があります"
+    },
+    "info": {
+      "title": "お問い合わせ",
+      "email": "メール",
+      "response": "通常24時間以内にご返信いたします"
+    }
+  },
+  "footer": {
+    "product": "製品",
+    "company": "会社",
+    "resources": "リソース",
+    "legal": "法的情報",
+    "features": "機能",
+    "pricing": "料金",
+    "api": "API",
+    "about": "会社概要",
+    "blog": "ブログ",
+    "careers": "採用情報",
+    "documentation": "ドキュメント",
+    "tutorials": "チュートリアル",
+    "support": "サポート",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "cookies": "Cookieポリシー",
+    "copyright": "© {year} DUALAIHUB. All rights reserved."
+  },
+  "admin": {
+    "dashboard": {
+      "title": "管理ダッシュボード",
+      "totalUsers": "総ユーザー数",
+      "activeUsers": "アクティブユーザー",
+      "totalRevenue": "総収益",
+      "totalTransactions": "総取引数"
+    },
+    "users": {
+      "title": "ユーザー管理",
+      "search": "ユーザーを検索...",
+      "name": "名前",
+      "email": "メール",
+      "role": "役割",
+      "plan": "プラン",
+      "credits": "クレジット",
+      "joined": "登録日",
+      "actions": "アクション"
+    },
+    "transactions": {
+      "title": "取引",
+      "user": "ユーザー",
+      "type": "タイプ",
+      "amount": "金額",
+      "status": "ステータス",
+      "date": "日付",
+      "actions": "アクション"
+    },
+    "wallet": {
+      "title": "ウォレット設定",
+      "usdtAddress": "USDT TRC20アドレス",
+      "updateSuccess": "ウォレットアドレスが正常に更新されました"
+    },
+    "aiConfig": {
+      "title": "AI設定",
+      "providers": "AIプロバイダー",
+      "enabled": "有効",
+      "disabled": "無効"
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "ページが見つかりません",
+      "message": "お探しのページは存在しません。",
+      "button": "ホームへ戻る"
+    },
+    "500": {
+      "title": "サーバーエラー",
+      "message": "サーバー側で問題が発生しました。",
+      "button": "再試行"
+    },
+    "unauthorized": "このページにアクセスするにはログインが必要です",
+    "forbidden": "このページにアクセスする権限がありません"
+  }
+}
