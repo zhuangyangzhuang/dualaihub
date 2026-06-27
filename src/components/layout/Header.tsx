@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { signOut, useSession } from "next-auth/react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu,
@@ -13,7 +14,6 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useAuthStore } from "@/store/authStore";
 import { LanguageSwitcher } from "@/components/i18n/LanguageSwitcher";
 
 const navLinks = [
@@ -26,7 +26,10 @@ const navLinks = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
-  const { user, isAuthenticated, logout } = useAuthStore();
+  const { data: session, status } = useSession();
+
+  const isAuthenticated = status === "authenticated";
+  const user = session?.user;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0f]/80 backdrop-blur-xl border-b border-white/5">
@@ -107,7 +110,7 @@ export function Header() {
                       <div className="border-t border-white/5 py-1">
                         <button
                           onClick={() => {
-                            logout();
+                            signOut({ callbackUrl: "/" });
                             setUserMenuOpen(false);
                           }}
                           className="flex items-center gap-3 w-full px-4 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-white/5 transition-colors"
@@ -181,7 +184,7 @@ export function Header() {
                     </Link>
                     <button
                       onClick={() => {
-                        logout();
+                        signOut({ callbackUrl: "/" });
                         setMobileMenuOpen(false);
                       }}
                       className="w-full text-left text-base text-red-400 hover:text-red-300 transition-colors"

@@ -94,7 +94,10 @@ export function RegisterForm({ onSwitchToLogin }: RegisterFormProps) {
       if (signInResult?.error) {
         router.push("/login");
       } else {
-        router.push("/dashboard");
+        router.refresh();
+        setTimeout(() => {
+          router.push("/dashboard");
+        }, 300);
       }
     } catch (error) {
       toast.error(error instanceof Error ? error.message : "Registration failed");

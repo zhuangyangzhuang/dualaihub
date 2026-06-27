@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 import { motion } from "framer-motion";
 import { Loader2 } from "lucide-react";
-import { useAuthStore } from "@/store/authStore";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { MobileNav } from "@/components/layout/MobileNav";
 
@@ -14,12 +14,11 @@ export default function ProtectedLayout({
   children: React.ReactNode;
 }) {
   const router = useRouter();
-  const { isAuthenticated, isLoading, checkSession } = useAuthStore();
+  const { data: session, status } = useSession();
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
-  useEffect(() => {
-    checkSession();
-  }, [checkSession]);
+  const isLoading = status === "loading";
+  const isAuthenticated = status === "authenticated";
 
   useEffect(() => {
     if (!isLoading && !isAuthenticated) {
@@ -45,7 +44,7 @@ export default function ProtectedLayout({
     );
   }
 
-  if (!isAuthenticated) {
+  if (!isAuthenticated || !session) {
     return null;
   }
 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { signOut, useSession } from "next-auth/react";
 import { motion } from "framer-motion";
 import {
   LayoutDashboard,
@@ -17,7 +18,6 @@ import {
   User,
   Zap,
 } from "lucide-react";
-import { useAuthStore } from "@/store/authStore";
 import { useQuotaStore, getRemainingDailyCredits } from "@/store/quotaStore";
 
 const navItems = [
@@ -36,7 +36,8 @@ interface SidebarProps {
 
 export function Sidebar({ collapsed = false, onCollapsedChange }: SidebarProps) {
   const pathname = usePathname();
-  const { user, logout } = useAuthStore();
+  const { data: session } = useSession();
+  const user = session?.user;
   const { plan, dailyUsed, credits, points, videoUsage } = useQuotaStore();
   const remainingCredits = getRemainingDailyCredits({ credits, points, dailyUsed, videoUsage, plan, lastReset: null, videoReset: null, isLoading: false, error: null });
 
@@ -167,7 +168,7 @@ export function Sidebar({ collapsed = false, onCollapsedChange }: SidebarProps) 
                 Profile
               </Link>
               <button
-                onClick={() => logout()}
+                onClick={() => signOut({ callbackUrl: "/" })}
                 className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-xs text-red-400 hover:text-red-300 hover:bg-white/5 transition-colors"
               >
                 <LogOut className="w-4 h-4" />
