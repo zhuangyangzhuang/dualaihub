@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,6 +14,7 @@ interface LoginFormProps {
 }
 
 export function LoginForm({ onSwitchToRegister, onForgotPassword }: LoginFormProps) {
+  const router = useRouter();
   const [isLoading, setIsLoading] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -55,7 +57,7 @@ export function LoginForm({ onSwitchToRegister, onForgotPassword }: LoginFormPro
         toast.error("Invalid email or password");
       } else {
         toast.success("Welcome back!");
-        window.location.href = "/dashboard";
+        router.push("/dashboard");
       }
     } catch (error) {
       toast.error("Something went wrong. Please try again.");

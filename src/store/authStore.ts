@@ -126,11 +126,27 @@ export const useAuthStore = create<AuthStore>()(
           const response = await fetch('/api/auth/session');
           if (response.ok) {
             const data = await response.json();
-            set({
-              user: data.user,
-              isAuthenticated: !!data.user,
-              isLoading: false,
-            });
+            if (data && data.user && data.user.email) {
+              set({
+                user: {
+                  id: data.user.id,
+                  email: data.user.email,
+                  name: data.user.name || null,
+                  image: data.user.image || null,
+                  role: data.user.role || 'USER',
+                  plan: data.user.plan || 'FREE',
+                  createdAt: new Date(),
+                },
+                isAuthenticated: true,
+                isLoading: false,
+              });
+            } else {
+              set({
+                user: null,
+                isAuthenticated: false,
+                isLoading: false,
+              });
+            }
           } else {
             set({
               user: null,

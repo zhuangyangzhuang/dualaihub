@@ -1,6 +1,8 @@
 "use client";
 
 import * as React from "react";
+import { signIn } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,6 +13,7 @@ interface RegisterFormProps {
 }
 
 export function RegisterForm({ onSwitchToLogin }: RegisterFormProps) {
+  const router = useRouter();
   const [isLoading, setIsLoading] = React.useState(false);
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -80,10 +83,18 @@ export function RegisterForm({ onSwitchToLogin }: RegisterFormProps) {
         throw new Error(data.error || "Registration failed");
       }
       
-      toast.success("Registration successful! Please verify your email.");
+      toast.success("Registration successful! Redirecting to dashboard...");
       
-      if (onSwitchToLogin) {
-        setTimeout(() => onSwitchToLogin(), 1500);
+      const signInResult = await signIn("credentials", {
+        email,
+        password,
+        redirect: false,
+      });
+      
+      if (signInResult?.error) {
+        router.push("/login");
+      } else {
+        router.push("/dashboard");
       }
     } catch (error) {
       toast.error(error instanceof Error ? error.message : "Registration failed");
