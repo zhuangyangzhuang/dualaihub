@@ -62,8 +62,12 @@ export async function POST(request: NextRequest) {
         data: {
           userId: user.id,
           amount: 0,
+          points: 0,
+          monthlyPoints: 0,
+          shortDramaQuota: 0,
+          shortDramaUsedThisMonth: 0,
           dailyUsed: 0,
-          lastReset: new Date(),
+          videoUsedThisMonth: 0,
         },
       });
 

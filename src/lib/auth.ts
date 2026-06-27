@@ -2,7 +2,6 @@ import { NextAuthOptions, Session, User } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import GoogleProvider from 'next-auth/providers/google';
 import GitHubProvider from 'next-auth/providers/github';
-import { PrismaAdapter } from '@auth/prisma-adapter';
 import { prisma } from '@/lib/prisma';
 import type { Role, Plan } from '@prisma/client';
 import { compare } from 'bcryptjs';
@@ -29,8 +28,7 @@ declare module 'next-auth/jwt' {
 }
 
 export const authOptions: NextAuthOptions = {
-  secret: process.env.NEXTAUTH_SECRET,
-  adapter: PrismaAdapter(prisma) as any,
+  secret: process.env.NEXTAUTH_SECRET || 'dualaihub-fallback-secret-change-in-production',
   providers: [
     CredentialsProvider({
       name: 'credentials',
@@ -67,28 +65,73 @@ export const authOptions: NextAuthOptions = {
         };
       },
     }),
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID ?? '',
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? '',
-      allowDangerousEmailAccountLinking: true,
-    }),
-    GitHubProvider({
-      clientId: process.env.GITHUB_ID ?? '',
-      clientSecret: process.env.GITHUB_SECRET ?? '',
-      allowDangerousEmailAccountLinking: true,
-    }),
+    ...(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET
+      ? [
+          GoogleProvider({
+            clientId: process.env.GOOGLE_CLIENT_ID,
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+            allowDangerousEmailAccountLinking: true,
+          }),
+        ]
+      : []),
+    ...(process.env.GITHUB_ID && process.env.GITHUB_SECRET
+      ? [
+          GitHubProvider({
+            clientId: process.env.GITHUB_ID,
+            clientSecret: process.env.GITHUB_SECRET,
+            allowDangerousEmailAccountLinking: true,
+          }),
+        ]
+      : []),
   ],
   session: {
     strategy: 'jwt',
   },
   callbacks: {
-    async jwt({ token, user, trigger }) {
+    async jwt({ token, user, account, trigger }) {
       if (user) {
         token.id = user.id as string;
-        // Cast user to include custom properties
         const typedUser = user as { id: string; role?: Role; plan?: Plan };
         token.role = typedUser.role ?? 'USER';
         token.plan = typedUser.plan ?? 'FREE';
+      }
+
+      if (account?.provider && account.provider !== 'credentials' && token.email) {
+        const existingUser = await prisma.user.findUnique({
+          where: { email: token.email },
+        });
+        if (existingUser) {
+          token.id = existingUser.id;
+          token.role = existingUser.role;
+          token.plan = existingUser.plan;
+        } else {
+          const newUser = await prisma.user.create({
+            data: {
+              email: token.email,
+              name: token.name as string,
+              image: token.picture as string,
+              passwordHash: 'OAUTH_USER_NO_PASSWORD',
+              role: 'USER',
+              plan: 'FREE',
+              emailVerified: new Date(),
+            },
+          });
+          await prisma.credit.create({
+            data: {
+              userId: newUser.id,
+              amount: 0,
+              points: 0,
+              monthlyPoints: 0,
+              shortDramaQuota: 0,
+              shortDramaUsedThisMonth: 0,
+              dailyUsed: 0,
+              videoUsedThisMonth: 0,
+            },
+          });
+          token.id = newUser.id;
+          token.role = newUser.role;
+          token.plan = newUser.plan;
+        }
       }
 
       if (trigger === 'update' && token.id) {
@@ -119,13 +162,5 @@ export const authOptions: NextAuthOptions = {
   pages: {
     signIn: '/login',
     error: '/login',
-  },
-  events: {
-    async linkAccount({ user }) {
-      await prisma.user.update({
-        where: { id: user.id },
-        data: { emailVerified: new Date() },
-      });
-    },
   },
 };
