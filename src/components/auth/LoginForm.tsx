@@ -68,10 +68,7 @@ export function LoginForm({ onSwitchToRegister, onForgotPassword }: LoginFormPro
         toast.error("Invalid email or password");
       } else {
         toast.success("Welcome back!");
-        router.refresh();
-        setTimeout(() => {
-          router.push("/dashboard");
-        }, 300);
+        window.location.href = "/dashboard";
       }
     } catch (error) {
       toast.error("Something went wrong. Please try again.");

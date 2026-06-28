@@ -20,7 +20,7 @@ import {
   XCircle,
   Loader2,
 } from "lucide-react";
-import { useAuthStore } from "@/store/authStore";
+import { useSession } from "next-auth/react";
 import { useQuotaStore, getRemainingDailyCredits } from "@/store/quotaStore";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -101,7 +101,7 @@ const activityColors = {
 };
 
 export default function DashboardPage() {
-  const { user } = useAuthStore();
+  const { data: session } = useSession();
   const { credits, points, dailyUsed, videoUsage, plan, checkQuota, isLoading } = useQuotaStore();
   const [mounted, setMounted] = useState(false);
 
@@ -138,7 +138,7 @@ export default function DashboardPage() {
         className="mb-8"
       >
         <h1 className="text-3xl font-bold text-white">
-          {getGreeting()}, {user?.name || "Creator"} 👋
+          {getGreeting()}, {session?.user?.name || "Creator"} 👋
         </h1>
         <p className="mt-2 text-white/60">
           Welcome back to your AI workspace. What would you like to create today?
