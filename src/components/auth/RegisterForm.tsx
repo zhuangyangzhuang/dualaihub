@@ -84,21 +84,27 @@ export function RegisterForm({ onSwitchToLogin }: RegisterFormProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
       });
-      
-      const data = await response.json();
-      
-      if (!response.ok) {
-        throw new Error(data.error || data.detail || "Registration failed");
+
+      let data: any = {};
+      try {
+        data = await response.json();
+      } catch (e) {
+        // 响应不是 JSON，使用状态码作为错误
+        throw new Error(`Server error (${response.status})`);
       }
-      
+
+      if (!response.ok) {
+        throw new Error(data.error || data.detail || data.message || `Registration failed (${response.status})`);
+      }
+
       toast.success("Registration successful! Redirecting to dashboard...");
-      
+
       const signInResult = await signIn("credentials", {
         email,
         password,
         redirect: false,
       });
-      
+
       if (signInResult?.error) {
         toast.error("Auto-login failed, please sign in manually");
         router.push("/login");
