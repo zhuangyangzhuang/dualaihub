@@ -88,7 +88,7 @@ export function RegisterForm({ onSwitchToLogin }: RegisterFormProps) {
       const data = await response.json();
       
       if (!response.ok) {
-        throw new Error(data.error || "Registration failed");
+        throw new Error(data.error || data.detail || "Registration failed");
       }
       
       toast.success("Registration successful! Redirecting to dashboard...");
