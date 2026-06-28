@@ -126,6 +126,10 @@ export const authOptions: NextAuthOptions = {
               shortDramaUsedThisMonth: 0,
               dailyUsed: 0,
               videoUsedThisMonth: 0,
+              lastVideoReset: new Date(),
+              lastReset: new Date(),
+              lastPointsReset: new Date(),
+              lastDailyReset: new Date(),
             },
           });
           token.id = newUser.id;
