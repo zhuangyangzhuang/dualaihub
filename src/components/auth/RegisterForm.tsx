@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,7 +14,15 @@ interface RegisterFormProps {
 
 export function RegisterForm({ onSwitchToLogin }: RegisterFormProps) {
   const router = useRouter();
+  const { status } = useSession();
   const [isLoading, setIsLoading] = React.useState(false);
+
+  // 如果已经登录，自动跳转到 dashboard
+  React.useEffect(() => {
+    if (status === "authenticated") {
+      window.location.href = "/dashboard";
+    }
+  }, [status]);
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -92,10 +100,12 @@ export function RegisterForm({ onSwitchToLogin }: RegisterFormProps) {
       });
       
       if (signInResult?.error) {
+        toast.error("Auto-login failed, please sign in manually");
         router.push("/login");
-      } else {
-        window.location.href = "/dashboard";
+        return;
       }
+
+      window.location.href = "/dashboard";
     } catch (error) {
       toast.error(error instanceof Error ? error.message : "Registration failed");
     } finally {

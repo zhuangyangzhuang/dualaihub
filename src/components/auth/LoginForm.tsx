@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,6 +15,7 @@ interface LoginFormProps {
 
 export function LoginForm({ onSwitchToRegister, onForgotPassword }: LoginFormProps) {
   const router = useRouter();
+  const { status } = useSession();
   const [isLoading, setIsLoading] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -23,6 +24,13 @@ export function LoginForm({ onSwitchToRegister, onForgotPassword }: LoginFormPro
     google: false,
     github: false,
   });
+
+  // 如果已经登录，自动跳转到 dashboard
+  React.useEffect(() => {
+    if (status === "authenticated") {
+      window.location.href = "/dashboard";
+    }
+  }, [status]);
 
   React.useEffect(() => {
     fetch('/api/auth/providers')
@@ -63,16 +71,23 @@ export function LoginForm({ onSwitchToRegister, onForgotPassword }: LoginFormPro
         password,
         redirect: false,
       });
-      
+
       if (result?.error) {
-        toast.error("Invalid email or password");
-      } else {
-        toast.success("Welcome back!");
-        window.location.href = "/dashboard";
+        toast.error(result.error === "CredentialsSignin" ? "Invalid email or password" : result.error);
+        setIsLoading(false);
+        return;
       }
+
+      if (!result?.ok) {
+        toast.error("Login failed, please try again");
+        setIsLoading(false);
+        return;
+      }
+
+      toast.success("Welcome back!");
+      // useEffect 会检测到 status 变为 authenticated 并自动跳转
     } catch (error) {
       toast.error("Something went wrong. Please try again.");
-    } finally {
       setIsLoading(false);
     }
   };
