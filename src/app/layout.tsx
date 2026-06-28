@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import { IntlProvider } from "@/components/i18n/IntlProvider";
-import { SessionProvider } from "next-auth/react";
+import { AuthProvider } from "@/components/providers/AuthProvider";
 import { cookies } from "next/headers";
 import "./globals.css";
 
@@ -98,9 +98,9 @@ export default async function RootLayout({
               },
             }}
           />
-          <SessionProvider>
+          <AuthProvider>
             {children}
-          </SessionProvider>
+          </AuthProvider>
         </IntlProvider>
       </body>
     </html>
