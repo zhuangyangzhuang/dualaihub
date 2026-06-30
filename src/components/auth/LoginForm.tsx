@@ -85,7 +85,8 @@ export function LoginForm({ onSwitchToRegister, onForgotPassword }: LoginFormPro
       }
 
       toast.success("Welcome back!");
-      // useEffect 会检测到 status 变为 authenticated 并自动跳转
+      router.push("/dashboard");
+      router.refresh();
     } catch (error) {
       toast.error("Something went wrong. Please try again.");
       setIsLoading(false);

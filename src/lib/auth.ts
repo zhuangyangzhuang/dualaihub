@@ -29,6 +29,42 @@ declare module 'next-auth/jwt' {
 
 export const authOptions: NextAuthOptions = {
   secret: process.env.NEXTAUTH_SECRET || 'dualaihub-fallback-secret-change-in-production',
+  trustHost: true,
+  debug: process.env.NODE_ENV !== 'production',
+  cookies: {
+    sessionToken: {
+      name: process.env.NODE_ENV === 'production'
+        ? '__Secure-next-auth.session-token'
+        : 'next-auth.session-token',
+      options: {
+        httpOnly: true,
+        sameSite: 'lax',
+        path: '/',
+        secure: process.env.NODE_ENV === 'production',
+      },
+    },
+    callbackUrl: {
+      name: process.env.NODE_ENV === 'production'
+        ? '__Secure-next-auth.callback-url'
+        : 'next-auth.callback-url',
+      options: {
+        sameSite: 'lax',
+        path: '/',
+        secure: process.env.NODE_ENV === 'production',
+      },
+    },
+    csrfToken: {
+      name: process.env.NODE_ENV === 'production'
+        ? '__Host-next-auth.csrf-token'
+        : 'next-auth.csrf-token',
+      options: {
+        httpOnly: true,
+        sameSite: 'lax',
+        path: '/',
+        secure: process.env.NODE_ENV === 'production',
+      },
+    },
+  },
   providers: [
     CredentialsProvider({
       name: 'credentials',
@@ -90,10 +126,10 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async jwt({ token, user, account, trigger }) {
       if (user) {
-        token.id = user.id as string;
-        const typedUser = user as { id: string; role?: Role; plan?: Plan };
-        token.role = typedUser.role ?? 'USER';
-        token.plan = typedUser.plan ?? 'FREE';
+        const credUser = user as { id: string; role?: Role; plan?: Plan };
+        token.id = credUser.id;
+        token.role = credUser.role ?? 'USER';
+        token.plan = credUser.plan ?? 'FREE';
       }
 
       if (account?.provider && account.provider !== 'credentials' && token.email) {
@@ -152,13 +188,18 @@ export const authOptions: NextAuthOptions = {
       return token;
     },
     async session({ session, token }): Promise<Session> {
+      if (!token?.id) {
+        return session as Session;
+      }
       return {
         ...session,
         user: {
-          ...session.user,
-          id: token.id,
-          role: token.role,
-          plan: token.plan,
+          id: token.id as string,
+          email: (token.email || session.user?.email || '') as string,
+          name: (token.name || session.user?.name || null) as string | null,
+          image: (token.picture || session.user?.image || null) as string | null,
+          role: (token.role || 'USER') as Role,
+          plan: (token.plan || 'FREE') as Plan,
         },
       };
     },
