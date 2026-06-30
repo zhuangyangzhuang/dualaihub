@@ -29,7 +29,6 @@ declare module 'next-auth/jwt' {
 
 export const authOptions: NextAuthOptions = {
   secret: process.env.NEXTAUTH_SECRET || 'dualaihub-fallback-secret-change-in-production',
-  trustHost: true,
   debug: process.env.NODE_ENV !== 'production',
   cookies: {
     sessionToken: {
